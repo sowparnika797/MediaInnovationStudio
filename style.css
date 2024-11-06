@@ -1,88 +1,28 @@
-/* Global Styles */
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    
 }
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1, h2, h3 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #005A5C;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/* Sections */
-section {
-    margin: 40px 0;
-}
-
-section h2 {
-    font-size: 2.2em;
-    margin-bottom: 15px;
-}
-
-section blockquote {
-    margin: 20px 0;
-    font-style: italic;
-    border-left: 4px solid #005A5C;
-    padding-left: 20px;
-}
-
-/* Buttons */
-.button {
-    display: inline-block;
-    background-color: #005A5C;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.button:hover {
-    background-color: #007d7f;
-}
-
-/* Video and Graph Containers */
-.video-container, .graph-container {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.video-container iframe {
-    width: 100%;
-    max-width: 800
